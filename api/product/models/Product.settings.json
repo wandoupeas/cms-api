@@ -1,0 +1,37 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "product",
+    "description": "products"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "zh_name": {
+      "type": "string",
+      "required": true
+    },
+    "en_name": {
+      "type": "string"
+    },
+    "product_code": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "category": {
+      "model": "category",
+      "via": "products"
+    },
+    "product_images": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    }
+  }
+}

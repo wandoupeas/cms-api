@@ -1,0 +1,31 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "article",
+    "description": "articals"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "minLength": 1,
+      "required": true,
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "author": {
+      "model": "user",
+      "via": "articles",
+      "plugin": "users-permissions"
+    }
+  }
+}

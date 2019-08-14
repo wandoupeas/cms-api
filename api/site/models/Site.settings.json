@@ -1,0 +1,26 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "site",
+    "description": "site info"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "default": "CMS",
+      "required": true,
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "keywords": {
+      "required": true,
+      "default": "cms",
+      "type": "string"
+    }
+  }
+}

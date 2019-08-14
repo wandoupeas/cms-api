@@ -1,0 +1,24 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "main",
+    "description": "main page info"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "default": "background_image",
+      "required": true,
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

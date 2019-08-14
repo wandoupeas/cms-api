@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "menu",
+  "info": {
+    "name": "menu",
+    "description": "menus"
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string"
+    },
+    "icon": {
+      "default": "menu",
+      "type": "string"
+    }
+  }
+}
