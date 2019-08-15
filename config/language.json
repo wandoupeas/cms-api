@@ -1,6 +1,6 @@
 {
   "enabled": true,
-  "defaultLocale": "zh",
+  "defaultLocale": "zh-Hans",
   "modes": [
     "query",
     "subdomain",
